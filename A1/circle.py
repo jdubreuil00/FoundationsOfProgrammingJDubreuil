@@ -26,9 +26,13 @@ print("The circumference of a circle with radius " + str(radius) + " is {:.5f}".
 print("The area of a circle with a radius "+ str(radius) + " is {:.5f}".format(area))
 #Output volume of sphere
 print("The volume of a sphere is with a radius "+ str(radius) + " is {:.5f}".format(volume))
+
+"""
 #Unedited output for testing
-#getcontext().prec = 2
-#print(float(Decimal(circumference)))
-#print("circumference: " + str(circumference))
-#print("area: " + str(area))
-#print("volume: " + str(volume))
+getcontext().prec = 2
+print(float(Decimal(circumference)))
+print("circumference: " + str(circumference))
+print("area: " + str(area))
+print("volume: " + str(volume))
+"""
+
