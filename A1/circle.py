@@ -14,7 +14,6 @@ while True:
     else:
         break
     
-
 #Output radius to user
 print(format(radius,'.3f'))
 #Circumference of circle based on Radius
