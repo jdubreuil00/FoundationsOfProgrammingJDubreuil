@@ -25,6 +25,6 @@ volume = float(4/3)*(math.pi * radius**3)
 #Output circumference
 print('The circumference of a circle with radius {:.3f}'.format(radius) + ' is {:.5f}'.format(circumference) )
 #Output area
-print('The area of a circle with a radius {:.3f}'.format(radius) + 'is {:.5f}'.format(area))
+print('The area of a circle with a radius {:.3f}'.format(radius) + ' is {:.5f}'.format(area))
 #Output volume of sphere
 print('The volume of a sphere is with a radius {:.3f}'.format(radius) + ' is {:.5f}'.format(volume))
