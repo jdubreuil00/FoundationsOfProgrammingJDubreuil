@@ -23,9 +23,14 @@ the the input is printed and the user is prompted to type a word or EXIT.
 #     else:
 #         print(data)
 
-def loop():
-    response = " "
-    while response != 'EXIT':
-        response = input("type input: ")
-        pass
-loop()
+# def loop():
+#     response = " "
+#     while response != 'EXIT':
+#         response = input("type input: ")
+#         pass
+# loop()
+
+# input_str = ""
+
+# while input_str != "EXIT":
+#     input_str = input("Please enter a string (type EXIT to quit): ")

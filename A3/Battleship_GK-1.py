@@ -26,7 +26,7 @@ num_of_ships = 5
 def drawBoard():
     # implement draw board here
     line = ""
-    for i in range(11):
+    for i in range(grid_size + 1):
         line += "+"
         for j in range(3):
             line += "-"
