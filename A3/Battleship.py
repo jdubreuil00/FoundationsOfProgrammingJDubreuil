@@ -192,7 +192,7 @@ def isGameOver(myBoard):
 def main(myBoard):
     '''
     Core loop of the Battleship game.
-    1. Sets up the two dimenstional array for the game board.
+    1. Sets up the two dimensional array for the game board.
     2. Outputs the game board to the console.
     3. Asks for user input for the Column(X) value.
     4. Asks for user input for the Row(Y) value.
