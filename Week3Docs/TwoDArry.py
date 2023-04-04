@@ -36,6 +36,7 @@ def main(thearray):
 
 # don't forget to call the main function
 # lastly do NOT forget to pass the array we declared
-main(twoDarry)
+# main(twoDarry)
+print(twoDarry)
 
 
