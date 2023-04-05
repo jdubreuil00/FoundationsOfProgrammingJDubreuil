@@ -255,5 +255,6 @@ def main(myBoard):
     
     
 # Call to main to start the game.
-main(grid) 
+if __name__=="__main__":
+    main(grid) 
 
