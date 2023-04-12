@@ -1,6 +1,6 @@
 """
 ----Assignment 4 shapes.py----
-@Author Jordan Dubreuil 04/09/2023
+@Author Jordan Dubreuil 04/11/2023
 This program takes in user input for the length,
 width, and depth of a rectangular volume. The file is divided
 into two classes, Rectangle and the sub class Parallelepiped.
@@ -67,6 +67,12 @@ class Rectangle:
         '''
         # formula for area of rectangle.
         return self.l*self.w
+    
+    def Display(self):
+        """
+        Prints the display output for the length, width, perimeter and area of the Rectangle.
+        """
+        print(f"The length of the rectangle is {self.l}.\nThe width of the rectangle is {self.w}.\nThe perimeter of the rectangle is {self.Perimeter()}.\nThe area of the rectangle is {self.Area()}.")
        
 
 class Parallelepiped(Rectangle):
@@ -113,6 +119,13 @@ class Parallelepiped(Rectangle):
         '''
         # formula for volume of parallelepiped.
         return (self.l*self.w)*self.d
+    
+    
+    def Display(self):
+        """
+        Prints the display output for the Volume of the Parallelepiped.
+        """
+        print(f"The volume of the parallelepiped is {self.Volume()}.")
         
 
 
@@ -137,11 +150,14 @@ def main():
             print('Please no negative numbers')
             continue
         else:
+            # Creates instance of Rectangle.
             rect = Rectangle(l,w)
-            print(f"The perimeter of the rectangle is {rect.Perimeter()}")
-            print(f"The area of the rectangle is {rect.Area()}")
+            # Call the Display Method from the instance of the Rectangle class. 
+            rect.Display()
+            # Creates instance of parallelepiped.
             para = Parallelepiped(l,w,d)
-            print(f"The volume of the parallelepiped is {para.Volume()}")
+            # Call the Display Method from the instance of the Parallelepiped class. 
+            para.Display()
             return False
                
 if __name__=="__main__":
