@@ -158,6 +158,7 @@ def main():
             para = Parallelepiped(l,w,d)
             # Call the Display Method from the instance of the Parallelepiped class. 
             para.Display()
+            rect.Display()
             return False
                
 if __name__=="__main__":
