@@ -1,29 +1,47 @@
+"""
+@Author Jordan Dubreuil 05/05/2023
+BankUtility Class - Foundations of Programming
+"""
+import random
+
 
 class BankUtility:
-    
+
     def __init(self):
         pass
+
+    @staticmethod
     def promptUserForString(prompt):
         # implement promptUserForString here
-        
-        return "" # be sure to change this
+        stringData = input(f"{prompt} ")
+        return stringData  # be sure to change this
 
+    @staticmethod
     def promptUserForPositiveNumber(prompt):
-        
+
         # implement promptUserForPositiveNumber here
-        
-        return 0.0 # be sure to change this
-    
+        while True:
+
+            doubleData = float(input(prompt))
+            print(doubleData)
+            if doubleData <= 0:
+                print("Amount cannot be negative or zero. Try again.")
+                continue
+            else:
+                return doubleData  # be sure to change this
+
+    @staticmethod
     def generateRandomInteger(min, max):
         # implement generateRandomInteger here
-        
-        return 0 # be sure to change as needed
-    
-    def convertFromDollarsToCents(amount):        
-        # implement convertFromDollarsToCents here     
-        
-        return 0 # be sure to change as needed
-    
+
+        return random.randint(min, max)  # be sure to change as needed
+
+    @staticmethod
+    def convertFromDollarsToCents(amount):
+        # implement convertFromDollarsToCents here
+        amount = amount * 100
+        return int(amount)  # be sure to change as needed
+
     '''
       Checks if a given string is a number (long)
       This does NOT handle decimals.
@@ -34,6 +52,7 @@ class BankUtility:
       @param numberToCheck String to check
       @return true if the String is a number, false otherwise
      '''
+    @staticmethod
     def isNumeric(numberToCheck):
         try:
             if numberToCheck.isdigit():
